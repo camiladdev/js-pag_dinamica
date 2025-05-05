@@ -18,21 +18,21 @@ export function criarItemDaLista() {
     const nomeItem = document.createElement("p");
     nomeItem.innerText = inputItem.value;
 
-    inputCheckbox.addEventListener("click", function() {
-        if (inputCheckbox.checked) {
+inputCheckbox.addEventListener("click", function() {
+    if (inputCheckbox.checked) {
             nomeItem.style.textDecoration = "line-through";
         } else {
             nomeItem.style.textDecoration = "none"
         }
     }
 )
+
     containerItemDaLista.appendChild(inputCheckbox);
     containerItemDaLista.appendChild(nomeItem);
 
     itemDaLista.appendChild(containerItemDaLista)
-    const dataCompleta = gerarDiaDaSemana();
-    
-    
+    const dataCompleta = gerarDiaDaSemana()
+   
     const itemData = document.createElement("p");
     itemData.innerText = dataCompleta;
     itemData.classList.add("texto-data")

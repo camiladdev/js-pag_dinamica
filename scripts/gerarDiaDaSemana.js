@@ -12,4 +12,4 @@ function gerarDiaDaSemana() {
     return dataCompleta
 }
 
-export default gerarDiaDaSemana; //exporta apenas uma função
+export default gerarDiaDaSemana;
